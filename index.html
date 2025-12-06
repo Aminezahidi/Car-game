@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Car Racing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container"></div>
+  <div id="ui">
+    <div id="speed-display">Speed: 0 km/h</div>
+    <div id="wanted-level">Wanted: ☆☆☆☆☆</div>
+    <div id="vehicle-info">Vehicle: None</div>
+    <div id="controls-info">
+      <p><strong>Controls:</strong></p>
+      <p>W/↑ - Forward | S/↓ - Backward | A/← - Left | D/→ - Right</p>
+      <p>Space - Handbrake | E - Enter/Exit Vehicle</p>
+      <p>Mouse - Look Around</p>
+    </div>
+  </div>
+  <div id="minimap">
+    <canvas id="minimap-canvas"></canvas>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"></script>
+  <script src="game.js"></script>
+  <script src="world.js"></script>
+  <script src="player.js"></script>
+  <script src="vehicles.js"></script>
+  <script src="pedestrians.js"></script>
+  <script src="police.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
